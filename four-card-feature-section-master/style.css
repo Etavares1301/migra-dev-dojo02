@@ -1,0 +1,16 @@
+body{
+    background-color: hsl(0, 0%, 98%);
+}
+
+.Quadrado{
+    width: 350px;
+    height: 250px;
+    box-shadow: 5px 5px 15px  hsl(229, 6%, 66%);
+    display: grid;
+    border-top: 15px;
+    border-radius: 5px;
+}
+
+.Container{
+    display: grid;
+}
