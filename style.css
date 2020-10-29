@@ -1,55 +1,92 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
     background-color: hsl(0, 0%, 98%);
+    font-family: 'Poppins', sans-serif;
 }
 
-.Quadrado{
+img {
+    height: 65px;
+    width: 65px;
+    margin-left: 260px;
+    margin-top: -20px;
+}
+
+.Cabecalho {
+    text-align: center;
+}
+
+.Titulo {
+    text-align: center;
+}
+
+.SubTitulo {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.Quadrado {
     width: 350px;
     height: 250px;
-    box-shadow: 5px 5px 15px  hsl(229, 6%, 66%);
+    box-shadow: 5px 5px 15px hsl(229, 6%, 66%);
     display: grid;
     border-top: 5px solid;
     border-radius: 5px;
 }
 
-.Container{
+.Container {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 50% 50%;
     align-items: center;
 }
 
-.--BordaVermelho{
+.--BordaVermelho {
     border-color: hsl(0, 78%, 62%)
 }
 
-.--BordaCyan{
+.--BordaCyan {
     border-color: hsl(180, 62%, 55%)
 }
 
-.--BordaLaranja{
+.--BordaLaranja {
     border-color: hsl(34, 97%, 64%)
 }
 
-.--BordaAzul{
+.--BordaAzul {
     border-color: hsl(212, 86%, 64%)
 }
 
-.Supervisor{
+.Supervisor {
     grid-gap: 10px 10px;
-    grid-area: 1 / 1 / span 2 / span 2; 
+    grid-area: 1 / 1 / span 2 / span 2;
 }
 
-.TeamBuilder{
+.TeamBuilder {
     grid-gap: 10px 10px;
-    grid-area: 1 / 2 / span 1 / span 2 
+    grid-area: 1 / 2 / span 1 / span 2
 }
 
-.Karma{
+.Karma {
     grid-gap: 10px 10px;
-    grid-area: 2 / 2 / span 2 / span 2 
+    grid-area: 2 / 2 / span 2 / span 2
 }
 
-.Calculator{
+.Calculator {
     grid-gap: 10px 10px;
-    grid-area: 1 / 3 / span 2 / span 2 
+    grid-area: 1 / 3 / span 2 / span 2
+}
+
+@media only screen and (max-width: 600px) {
+    .Container {
+        display: block;
+    }
+    .Quadrado {}
+    .body {
+        text-align: center;
+    }
 }
