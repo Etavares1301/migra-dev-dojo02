@@ -1,32 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 body {
     background-color: hsl(0, 0%, 98%);
     font-family: 'Poppins', sans-serif;
 }
 
-img {
-    height: 65px;
-    width: 65px;
-    margin-left: 260px;
-    margin-top: -20px;
+.Cabecalho {
+    text-align: justify;
+    text-align-last: justify;
+    max-width: 390px;
+    margin: 0 auto;
 }
 
-.Cabecalho {
-    text-align: center;
+h1 {
+    font-weight: 200;
+    margin-top: 50px
+}
+
+h2 {
+    font-weight: 600;
 }
 
 .Titulo {
     text-align: center;
+    margin-bottom: 0px;
+
 }
 
 .SubTitulo {
     text-align: center;
+    margin-top: 0px;
+    font-size: 2em;
+
 }
 
-p {
+.Descricao {
     text-align: center;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0 auto 70px;
+    font-weight: 400;
 }
 
 .Quadrado {
@@ -36,13 +47,15 @@ p {
     display: grid;
     border-top: 5px solid;
     border-radius: 5px;
+    padding: 30px 30px;
 }
 
 .Container {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 410px 410px 410px;
+    justify-content: center;
     align-items: center;
+    gap: 30px;
 }
 
 .--BordaVermelho {
@@ -63,22 +76,30 @@ p {
 
 .Supervisor {
     grid-gap: 10px 10px;
-    grid-area: 1 / 1 / span 2 / span 2;
+    grid-area: 1 / 1 / span 2;
 }
 
 .TeamBuilder {
     grid-gap: 10px 10px;
-    grid-area: 1 / 2 / span 1 / span 2
 }
 
 .Karma {
     grid-gap: 10px 10px;
-    grid-area: 2 / 2 / span 2 / span 2
 }
 
 .Calculator {
     grid-gap: 10px 10px;
-    grid-area: 1 / 3 / span 2 / span 2
+    grid-area: 1 / 3 / span 2;
+}
+
+.Container h3 {
+    margin: 0;
+}
+
+.Quadrado img {
+    height: 65px;
+    width: 65px;
+    justify-self: flex-end;
 }
 
 @media only screen and (max-width: 600px) {
